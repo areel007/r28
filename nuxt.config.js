@@ -1,7 +1,8 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'brookfield',
+    title: 'R28',
+    titleTemplate: 'R28: %s',
     htmlAttrs: {
       lang: 'en'
     },
@@ -12,7 +13,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' },
       { rel: 'stylesheet', href: '/style.css' },
     ]
   },

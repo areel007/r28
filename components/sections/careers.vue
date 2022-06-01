@@ -1,11 +1,15 @@
 <template>
   <section class="relative w-screen h-300 md:h-475">
-    <img class="absolute top-0 left-0 z-0 w-full h-full object-cover" src="https://res.cloudinary.com/chitchatimages/image/upload/v1645366956/r28/pexels-tirachard-kumtanom-601170_bb7f5v.jpg" alt="R28 careers">
-    <div class="overlay h-full w-full absolute top-0 left-0 z-10 bg-black opacity-60"></div>
+    <img
+      class="absolute top-0 left-0 z-0 w-full h-full object-cover"
+      src="../../static/images/career.jpg"
+      alt="R28 careers"
+    >
+    <div class="overlay h-full w-full absolute top-0 left-0 z-10 bg-dark-grey opacity-60"></div>
     <div class="relative container mx-auto z-30 relative flex flex-col justify-center w-full h-full">
-      <span class="text-white text-10 md:text-16 font-medium mb-5">CAREERS</span>
-      <h1 class="text-3xl md:text-4xl text-white mb-5">R28 and You</h1>
-      <p class="text-12 md:text-18 text-white mb-5 max-w-3xl">R28 focuses on the Nigerian market and welcomes international opportunities with reputable partners.</p>
+      <span class="text-white text-10 md:text-14 font-medium mb-5">CAREERS</span>
+      <h1 class="text-3xl md:text-48 text-white mb-5 careers__text">R28 and You</h1>
+      <p class="text-12 md:text-16 text-white mb-5 max-w-3xl">R28 focuses on the Nigerian market and welcomes international opportunities with reputable partners.</p>
       <button class="hero__btn">
         <span class="mr-3 capitalize text-14">Learn more</span>
         <svg
@@ -64,15 +68,18 @@ export default {
   z-index: 10;
   fill: white;
 }
+.careers__text {
+  font-family: 'Playfair Display', serif;
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .container {
-    width: 100%;
+    width: 90%;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
   .container {
-    padding: 0 10px;
+    width: 95%;
   }
 }
 </style>

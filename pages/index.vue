@@ -16,6 +16,9 @@ import AboutUs from "../components/sections/about-us";
 import Careers from "../components/sections/careers";
 export default {
   name: 'IndexPage',
-  components: {Careers, AboutUs, OurBusinesses, Stat, Hero}
+  components: {Careers, AboutUs, OurBusinesses, Stat, Hero},
+  head: {
+    title: 'Home'
+  }
 }
 </script>

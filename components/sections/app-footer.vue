@@ -1,9 +1,15 @@
 <template>
-  <footer class="py-10 bg-black">
+  <footer class="py-10 bg-dark-grey">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-5 gap-6">
       <div class="">
-        <h1 class="text-xl text-white font-bold mb-3">R28</h1>
-        <div class="flex">
+        <div class="mb-5">
+          <img
+            class="mr-0 md:mr-24 cursor-pointer text-white logo" @click="$router.push('/')"
+            src="https://res.cloudinary.com/chitchatimages/image/upload/v1645537267/r28/R28_LOGO_-_LIGHT_ljeh65.png"
+            alt="R28 logo"
+          >
+        </div>
+        <div class="flex footer__socials">
           <a href="https://www.linkedin.com" target="_blank" class="w-30 h-30 rounded-full bg-white mr-2 flex justify-center items-center">
             <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
@@ -16,27 +22,36 @@
           </a>
         </div>
       </div>
-      <div class="grid grid-cols-1 gap-2">
+      <div class="grid grid-cols-1 gap-2 self-start text-white">
         <h3 class="text-gray-300 text-12 uppercase">About Us</h3>
-        <NuxtLink class="text-white text-16" to="/about-us">Who we are</NuxtLink>
-        <NuxtLink class="text-white text-16" to="/about-us">Our approach</NuxtLink>
-        <NuxtLink class="text-white text-16" to="/about-us">Leadership</NuxtLink>
-        <NuxtLink class="text-white text-16" to="/about-us">Career</NuxtLink>
+        <NuxtLink class="text-12 md:text-14" to="/who-we-are">Who we are</NuxtLink>
+        <NuxtLink class="text-12 md:text-14" to="/our-culture">Our culture & core values</NuxtLink>
+        <NuxtLink class="text-12 md:text-14" to="/our-approach">Our Approach</NuxtLink>
+        <NuxtLink class="text-12 md:text-14" to="/leadership">Leadership</NuxtLink>
+        <NuxtLink class="text-12 md:text-14" to="/careers">Careers</NuxtLink>
       </div>
-      <div class="grid grid-cols-1 gap-2">
-        <h3 class="text-gray-300 text-12 uppercase">Our Businesses</h3>
-        <NuxtLink class="text-white text-16" to="/about-us">Renewable Power and Transition</NuxtLink>
-        <NuxtLink class="text-white text-16" to="/about-us">Infrastructure</NuxtLink>
-        <NuxtLink class="text-white text-16" to="/about-us">Private Equity</NuxtLink>
-        <NuxtLink class="text-white text-16" to="/about-us">Real Estate</NuxtLink>
+      <div class="grid grid-cols-1 gap-2 self-start text-white">
+        <h3 class="text-gray-300 text-12 uppercase">Our Investments</h3>
+        <NuxtLink class="text-12 md:text-14" to="/construction">Construction</NuxtLink>
+        <NuxtLink class="text-12 md:text-14" to="/real-estate">Real Estate</NuxtLink>
+        <NuxtLink class="text-12 md:text-14" to="/aviation">Aviation</NuxtLink>
+        <NuxtLink class="text-12 md:text-14" to="/telecommunications">Telecommunications</NuxtLink>
+        <NuxtLink class="text-12 md:text-14" to="/technology">Technology & Energy Solutions</NuxtLink>
+        <NuxtLink class="text-12 md:text-14" to="/mining">Mining</NuxtLink>
       </div>
-      <div class="grid grid-cols-1 gap-2">
-        <h3 class="text-gray-300 text-12 uppercase">Careers</h3>
+      <div class="grid grid-cols-1 gap-2 self-start text-white">
+        <h3 class="text-gray-300 text-12 uppercase">Strategic Alliances</h3>
+        <NuxtLink class="text-12 md:text-14" to="/strategic-alliances">Strategic Alliances</NuxtLink>
       </div>
-      <div class="grid grid-cols-1 gap-2 self-start">
+      <div class="grid grid-cols-1 gap-2 self-start text-white">
         <h3 class="text-gray-300 text-12 uppercase">Contact</h3>
-        <span class="text-white text-16">Parkview, Ikoyi</span>
-        <span class="text-white text-16">+248 (0) 802 8943 665</span>
+        <p class="text-12 md:text-14">
+          54A Adeola Odeku Street, <br>
+          Victoria Island, <br>
+          Lagos, Nigeria
+        </p>
+        <span class="text-12 md:text-14">T: +234 (0) 908 7991 029</span>
+        <span class="text-12 md:text-14">E: info@r28.ng</span>
       </div>
     </div>
   </footer>
@@ -49,9 +64,26 @@ export default {
 </script>
 
 <style scoped>
+footer {
+  position: relative;
+  top: 0;
+}
+.logo {
+  width: 60px;
+}
+.logo img {
+  width: 100%;
+}
+.footer__socials a svg {
+  fill: #3d3d3c;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     width: 95%;
+  }
+  .logo {
+    width: 30px;
   }
 }
 </style>
