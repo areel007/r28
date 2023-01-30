@@ -1,7 +1,7 @@
 <template>
   <section class="relative h-auto md:h-70vh pt-28 pb-10 md:pt-0 md:pb-0 2xl:h-70vh w-screen">
-    <div :class="`overlay absolute top-0 left-0 z-20 bg-dark-grey w-full h-full ${count === 1 ? 'opacity-80' : 'opacity-0'}`"></div>
-    <img class="absolute top-0 object-cover w-full h-full" v-if="count === 1" src="https://res.cloudinary.com/chitchatimages/image/upload/v1645355988/r28/r28_c6sdgz.jpg" alt="hero">
+    <div :class="`overlay absolute top-0 left-0 z-20 bg-dark-grey w-full h-full ${count === 1 ? 'opacity-40' : 'opacity-0'}`"></div>
+    <img class="absolute top-0 object-cover w-full h-full" v-if="count === 1" src="../../static/images/hero-1.jpg" alt="hero">
     <img class="absolute top-0 object-cover w-full h-full" v-if="count === 2" src="../../static/images/hero-2.jpg" alt="hero">
     <img class="absolute top-0 object-cover w-full h-full" v-if="count === 3" src="../../static/images/hero-3.jpg" alt="hero">
     <div class="container mx-auto z-30 relative flex flex-col justify-center w-full h-full">

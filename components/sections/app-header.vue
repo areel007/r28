@@ -127,10 +127,6 @@ export default {
               linkName: 'Leadership',
               linkUrl: '/leadership'
             },
-            {
-              linkName: 'Careers',
-              linkUrl: '/careers'
-            },
           ]
         },
         {

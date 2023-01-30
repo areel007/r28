@@ -9,7 +9,7 @@
       </h1>
       <div class="mb-5 md:mb-10">
         <p class="text-14 md:text-16 mb-5">
-          Everyone involved in the Company has an ongoing responsibility to share and live by our
+          Everyone involved in the company has an ongoing responsibility to share and live by our
           corporate values and ambitions. The Group’s thinking, interaction and decision-making process
           is grounded in these values, and we recognize that continuous adherence is essential to our growth.
           The three core values that frame all our actions and underpin our performance are:
@@ -18,14 +18,6 @@
           <h3 class="mb-1 text-14 font-bold text-brown-r28">Integrity</h3>
           <p class="text-14 md:text-16 mb-5">
             A commitment to ensuring our business activities are done with sound moral and the highest ethical standard.
-          </p>
-        </div>
-        <div class="mb-5">
-          <h3 class="mb-1 text-14 font-bold text-brown-r28">Quality</h3>
-          <p class="text-14 md:text-16">
-            We thoroughly understand that quality ensures customer satisfaction, increased profitability, good neighborliness
-            and overall growth. Therefore, we have put quality at the core of everything we do. We continually strive to
-            gain a reputation for high standards of quality in all the marketplace where we operate.
           </p>
         </div>
         <div class="mb-5">
